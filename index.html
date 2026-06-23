@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capri By Mayamex | Italian Steakhouse & Seafood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Capri By Mayamex</div>
+            <div class="rating-badge">4.3★</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Steakhouse Classics, Seafood & Wine</h1>
+                <p>Experience the finest Italian flavors in a warm, elegant atmosphere.</p>
+                <div class="hero-rating">4.3★ Rated by Our Guests</div>
+                <a href="#reservations" class="cta-button primary">Reserve a Table</a>
+            </div>
+        </section>
+
+        <section id="dishes" class="container">
+            <h2 class="section-title">Popular Dishes</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-info">
+                        <h3>Bread <span class="stars">⭐</span></h3>
+                        <p>Freshly baked Italian bread with herb butter.</p>
+                        <span class="price">$5</span>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-info">
+                        <h3>Shrimp Scampi <span class="stars">⭐⭐</span></h3>
+                        <p>Garlic butter shrimp scampi served over linguine.</p>
+                        <span class="price">$22</span>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-info">
+                        <h3>Lasagna <span class="stars">⭐⭐⭐</span></h3>
+                        <p>Signature slow-baked lasagna with ricotta, mozzarella, and house marinara.</p>
+                        <span class="price">$18</span>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-info">
+                        <h3>Caesar Salad <span class="stars">⭐</span></h3>
+                        <p>Crisp romaine with house-made Caesar dressing, croutons, and Parmesan.</p>
+                        <span class="price">$12</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="container">
+            <h2 class="section-title">Hours & Location</h2>
+            <div class="location-content">
+                <div class="info-card">
+                    <h3>Hours</h3>
+                    <p>Mon-Sun: 11AM - 10PM</p>
+                    <h3>Address</h3>
+                    <p>Capri By Mayamex<br>123 Italian Way, Flavor Town, ST 12345</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div class="map-container">
+                    <!-- Placeholder Map -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215707164965!2d-73.9878441!3d40.7579747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1655932545000!5m2!1sen!2sus" 
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Capri By Mayamex. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="sticky-ctas">
+        <button class="cta-button primary">Reserve a Table</button>
+        <button class="cta-button secondary">Order Online</button>
+    </div>
+
+    <!-- AI Chat Widget -->
+    <div id="chat-widget">
+        <button id="chat-toggle" class="chat-bubble">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </button>
+        <div id="chat-panel" class="hidden">
+            <div class="chat-header">
+                <h3>Capri Assistant</h3>
+                <button id="chat-close">&times;</button>
+            </div>
+            <div id="chat-messages">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="chat-actions">
+                <button class="chat-action-btn" data-action="reserve">🔖 Reserve a Table</button>
+                <button class="chat-action-btn" data-action="order">🛵 Order Online</button>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about our menu...">
+                <button id="chat-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
